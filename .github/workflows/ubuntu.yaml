@@ -50,7 +50,7 @@ jobs:
       
       - name: Build AppImage
         env:
-          QMAKE: $RUNNER_WORKSPACE/Qt/6.8.0/gcc_64/bin/qmake
+          QMAKE: $QT_ROOT_DIR/bin/qmake
         run: |
           mkdir AppDir
           mkdir -p AppDir/usr/bin AppDir/usr/share/applications AppDir/usr/share/icons
